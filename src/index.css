@@ -1,0 +1,22 @@
+:root {
+  font-family:Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --background-color: rgb(116, 142, 159);
+  --primary-color: rgb(21, 21, 108);        
+  --secondary-color:lightseagreen;     
+  --light-color: snow;   
+  --dark-color:rgb(125, 63, 19);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.footer-container {
+  text-align: center;
+}

@@ -1,0 +1,39 @@
+.travels-container {
+  max-width: 95%;
+  margin: 10px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.travels-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 30px;
+  color:var(--secondary-color);
+}
+
+.travels-container ul {
+  list-style: none; 
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.travels-container li {
+  display: flex;
+  flex-direction: column;
+}
+
+.travels-container li a {
+  text-decoration: none;
+  color: rgb(189, 219, 219);
+  display: block;
+}
+
+.travels-container li a:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s;
+}

@@ -1,0 +1,27 @@
+.member-container {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  background:var(--background-color);
+  border-radius: 12px;
+  border: 2px solid rgb(12, 12, 92);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.member-container h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.member-container p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: var(--light-color);
+}
+
+.member-container form {
+  width: 100%;
+}

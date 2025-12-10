@@ -1,0 +1,39 @@
+.agency {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  color: var(--dark-color);
+}
+
+.agency h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.agency h3 {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color:var(--secondary-color);
+}
+
+.agency p {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.agency ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.agency li {
+  margin-bottom: 8px;
+  list-style: none;
+  font-size: 15px;
+  font-weight: bold;
+}

@@ -1,0 +1,45 @@
+.travel-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.travel-container h2{
+    color:var(--secondary-color);
+}
+
+.travel-container h3{
+  margin-top: 10px;
+  color: rgb(235, 200, 105);
+  font-size: 22px;
+}
+
+.review-container {
+  margin-top: 20px;
+}
+
+.review-container h4{
+    color:var(--secondary-color);
+    font-size: 18px;
+}
+
+.review-card {
+  border-left: 4px solid var(--primary-color);
+  border-right: 4px solid var(--primary-color);
+  background: var(--light-color);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.review-author {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.review-comment {
+  font-style: italic;
+  font-size: 16px;
+}
