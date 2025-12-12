@@ -43,19 +43,4 @@
   font-weight: bold;
 }
 
-.add-cart {
-  margin-top: 12px;
-  background-color:var(--primary-color);
-  color: var(--light-color);
-  padding: 5px 10px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 14px;
-  text-align: center;
-}
 
-.add-cart:hover {
-  background-color: rgb(78, 78, 127);
-  transform: scale(1.1);
-}

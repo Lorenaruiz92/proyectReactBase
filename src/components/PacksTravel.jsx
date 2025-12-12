@@ -15,7 +15,7 @@ const PacksTravel = ({ travel }) => {
         <h3>{travel.name}</h3>
         <p>{travel.days} Días</p>
         <p>Precio: {travel.price}</p>
-        <button className="add-cart" onClick={() => {
+        <button onClick={() => {
           addToCart(travel);
           alert(`¡Has añadido ${travel.name} al carrito!`);
          }}
