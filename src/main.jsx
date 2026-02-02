@@ -8,7 +8,7 @@ import Travel from './pages/Travel.jsx'
 import Member from './pages/Member.jsx'
 import NotFound from './pages/404.jsx'
 import Cart from './components/Cart.jsx'
-import { CartProvider } from "./hooks/useCart";
+import { CartProvider } from "./context/CartContext.jsx";
 import React, { StrictMode } from 'react'
 
 createRoot(document.getElementById('root')).render(

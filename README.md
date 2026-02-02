@@ -1,54 +1,114 @@
-# React + Vite
-WildSoul – Agencia de Viajes✈️
+🌍 WildSoul – Travel Experiences (React)
 
-WildSoul es una aplicación web desarrollada con React que permite explorar diferentes paquetes de viajes, añadirlos al carrito, eliminarlos y gestionar compras de forma sencilla y visual.  Muestra valoraciones y reseñas de los viajes y también un formulario en el cuál te puedes registrar.
+WildSoul es una aplicación web desarrollada con React que simula una plataforma de viajes de aventura.
+Este proyecto forma parte de un ejercicio académico cuyo objetivo principal es practicar:
 
-Tecnologías utilizadas ⚙️:
+Componentes en React
 
-- React
+Hooks personalizados
 
-- React Router Dom
+Context API
 
-- Context API 
+Gestión de estado global
 
-- CSS personalizado
+Persistencia con localStorage
 
-- Vite 
+Navegación con React Router
 
- 
-Funcionalidades principales 📋:
+Este proyecto es solo frontend y no utiliza backend ni base de datos.
 
-Visualización de paquetes de viajes con imagen, precio y duración.
+Tecnologías utilizadas:
 
-Añadir viajes al carrito.
+React
 
-Eliminar elementos del carrito.
+React Router DOM
 
-Mensajes de confirmación al comprar o añadir.
+Context API
 
-Navegación entre páginas (Viajes, información, Socios, Carrito…).
+Custom Hooks
 
- 
-Instalación🔌:
+JavaScript (ES6+)
 
-Instala dependencias:
+CSS
+
+📁 Estructura del proyecto
+src/
+├── components/        
+├── context/           
+├── hooks/             
+├── pages/             
+├── api/            
+├── App.jsx
+├── main.jsx
+└── index.css
+
+Gestión del carrito (arquitectura)
+
+La gestión del carrito sigue una arquitectura separada y limpia:
+
+🔹 CartProvider (Context)
+
+Almacena el estado del carrito
+
+Persiste los datos en localStorage
+
+No contiene lógica de negocio
+
+🔹 useCart (Custom Hook)
+
+Encapsula toda la lógica del carrito:
+
+Añadir viaje
+
+Eliminar viaje
+
+Comprar viaje
+
+Facilita la reutilización de la lógica en cualquier componente
+
+Este enfoque sigue buenas prácticas de React y una correcta separación de responsabilidades.
+
+🛒 Funcionalidades principales
+
+Visualización de viajes
+
+Añadir viajes al carrito
+
+Eliminar viajes del carrito
+
+Simulación de compra
+
+Persistencia del carrito entre recargas
+
+Navegación entre páginas
+
+▶️ Cómo ejecutar el proyecto
+
+Clona el repositorio:
+
+git clone <url-del-repositorio>
+
+
+Instala las dependencias:
 
 npm install
 
 
-Inicia el proyecto:
+Ejecuta el proyecto:
 
 npm run dev
 
-Estructura básica del proyecto 📁:
-src/
- ├── assets/
- ├── components/
- ├── hooks/
- ├── pages/
- └── App.jsx
 
-👩‍💻 Autor:
+Abre en el navegador:
 
-Lorena Ruiz – Proyecto académico de desarrollo full-stack (nº4).
+http://localhost:5173
 
+Contexto académico:
+
+Este proyecto ha sido desarrollado con fines educativos, como base inicial para un proyecto más avanzado con backend.
+El foco principal está en el correcto uso de React, Context API y custom hooks.
+
+Autor:
+
+Proyecto desarrollado por: Lorena Ruiz Lara
+Curso de Desarrollo Full Stack – React

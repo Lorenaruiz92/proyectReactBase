@@ -1,16 +1,8 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
-const CartContext = createContext();
-
-export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState(() => {
-    const stored = localStorage.getItem("cart");
-    return stored ? JSON.parse(stored) : [];
-  });
-
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
+export const useCart = () => {
+  const { cart, setCart } = useContext(CartContext);
 
   const addToCart = (travel) => {
     setCart(prev => {
@@ -23,13 +15,15 @@ export const CartProvider = ({ children }) => {
     setCart(prev => prev.filter(item => item.id !== id));
   };
 
-  return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
-      {children}
-    </CartContext.Provider>
-  );
-};
+  const buyTravel = (travel) => {
+    alert(`¡Genial, compraste: ${travel.name}, disfruta tu viaje!`);
+    removeFromCart(travel.id);
+  };
 
-export const useCart = () => {
-  return useContext(CartContext);
+  return {
+    cart,
+    addToCart,
+    removeFromCart,
+    buyTravel
+  };
 };
